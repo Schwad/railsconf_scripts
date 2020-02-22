@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 gem 'rails', github: 'rails/rails'
 gem 'arel', github: 'rails/arel'
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.4.0'
 gem 'benchmark-ips'

@@ -17,3 +17,8 @@ Benchmark.ips do |x|
 
   x.compare!
 end
+
+slow
+
+
+slow.class

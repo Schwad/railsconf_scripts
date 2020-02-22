@@ -17,7 +17,9 @@ end
 
 class BugTest < Minitest::Test
   def test_assert
-    project = Project.create!
-    assert_not_operator project, :valid?
+    project = Project.create!(name: 'Hello')
+    assert_operator project, :valid?
+    assert_operator Project, :exists?
+    assert_equal project.name, 'Hello'
   end
 end
