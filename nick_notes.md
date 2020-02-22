@@ -115,3 +115,25 @@ git reset --hard origin/practicing_git # to mimic a full other branch
 
 - git rebase -i master
 - pick/reword/edit/squash/fixup (like squash but keeps first commit message)
+
+
+### edit
+
+it'll then prompt `git commit -- amend` and then `git rebase --continue` after
+
+(reword just reword in live)
+
+
+## GIT REFLOG
+
+- lists all the things you do and can undo
+- like if you've squashed prematurely
+
+### Finding issues to work on
+- Test release candidates and that master branch
+- Fix incorrect documentation and work on WIP guides
+- Focus on your strengths
+- Work on activejob or webconsole
+- Review open pull requests
+- Refactoring methods and tests
+- Watch the issues tracker
