@@ -82,3 +82,36 @@ tp.disable
 ```
 
 ### Legit Git commands for future
+
+
+- git add upstream
+
+#### Keeping in Sync
+- git pull --rebase upstream master
+- git push origin master
+
+
+#### Version jump
+
+- git checkout v. 4.1.7 to check all versions
+
+#### Finding bad change
+(know where bug existed and where it doesn't)
+- git bisect start
+- git bisect bad #picks the current version
+- git bisect good v4.2.1 (release #)
+- git show # when you find it
+- git bisect reset # to return where you started
+
+
+- git reset --soft HEAD@{1}
+
+git reset --hard origin/practicing_git # to mimic a full other branch
+
+
+# SQUASHING
+
+## Interactive rebase
+
+- git rebase -i master
+- pick/reword/edit/squash/fixup (like squash but keeps first commit message)
